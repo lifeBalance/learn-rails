@@ -30,9 +30,11 @@ gem 'jbuilder', '~> 1.2'
 # learn-rails
 gem 'activerecord-tableless'
 gem 'compass-rails', '~> 2.0.alpha.0' 
-gem 'figaro'
+# We are not gonna be using the 'figaro' gem either.
+# gem 'figaro'
 gem 'gibbon'
-gem 'google_drive'
+# The 'google_drive' gem is outdated.
+# gem 'google_drive', '0.3.6'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'zurb-foundation'
