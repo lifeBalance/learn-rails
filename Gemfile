@@ -6,9 +6,6 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -30,7 +27,7 @@ gem 'jbuilder', '~> 1.2'
 # learn-rails
 gem 'activerecord-tableless'
 gem 'compass-rails', '~> 2.0.alpha.0' 
-# We are not gonna be using the 'figaro' gem either.
+# I don't think the 'figaro' gem was working properly either.
 gem 'figaro'
 gem 'gibbon'
 # The 'google_drive' gem is outdated.
@@ -40,7 +37,15 @@ gem 'simple_form'
 gem 'zurb-foundation'
 # Specifying a group for development or testing ensures a gem is not loaded in production.
 group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
   gem 'better_errors' 
   gem 'quiet_assets' 
   gem 'rails_layout'
 end
+group :production do
+  gem 'pg'
+  gem 'thin'
+  gem 'rails_12factor'
+end
+
