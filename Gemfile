@@ -37,7 +37,6 @@ gem 'simple_form'
 gem 'zurb-foundation'
 # Specifying a group for development or testing ensures a gem is not loaded in production.
 group :development do
-  # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'better_errors' 
   gem 'quiet_assets' 
