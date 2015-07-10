@@ -50,6 +50,8 @@ GEM
       compass (>= 0.12.2)
     erubis (2.7.0)
     execjs (2.5.2)
+    figaro (1.1.1)
+      thor (~> 0.14)
     fssm (0.2.10)
     gibbon (1.1.6)
       httparty
@@ -137,6 +139,7 @@ DEPENDENCIES
   better_errors
   coffee-rails (~> 4.0.0)
   compass-rails (~> 2.0.alpha.0)
+  figaro
   gibbon
   high_voltage
   jbuilder (~> 1.2)

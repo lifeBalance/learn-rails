@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'activerecord-tableless'
 gem 'compass-rails', '~> 2.0.alpha.0' 
 # We are not gonna be using the 'figaro' gem either.
-# gem 'figaro'
+gem 'figaro'
 gem 'gibbon'
 # The 'google_drive' gem is outdated.
 # gem 'google_drive', '0.3.6'
